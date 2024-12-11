@@ -1,0 +1,26 @@
+.search-container {
+    display: flex;
+    flex-wrap: wrap; /* 화면 크기에 따라 요소가 줄바꿈 */
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .search-container select {
+    width: auto; /* 기본 크기 */
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .search-container {
+      flex-direction: column; /* 작은 화면에서 세로 정렬 */
+      align-items: flex-start;
+    }
+  
+    .search-container select {
+      width: 100%; /* 좁은 화면에서는 전체 너비 사용 */
+    }
+  }
+  
